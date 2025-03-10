@@ -1,30 +1,34 @@
 package model;
 
 public class Card {
-    private Long id;
+
+    private int id;
     private String name;
-    private String set;
+    private String cardNum;
+    private String cardType;
+    private int power;
+    private int toughness;
     private String rarity;
-    private String color;
-    private int quantity;
+    private int setId;
 
     public Card () {}
 
-    public Card(Long id, String name, String set, String rarity,
-                String color, int quantity) {
+    public Card(int id, String name, String cardNum, String cardType, int power, int toughness, String rarity, int setId) {
         this.id = id;
         this.name = name;
-        this.set = set;
+        this.cardNum = cardNum;
+        this.cardType = cardType;
+        this.power = power;
+        this.toughness = toughness;
         this.rarity = rarity;
-        this.color = color;
-        this.quantity = quantity;
+        this.setId = setId;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -36,12 +40,36 @@ public class Card {
         this.name = name;
     }
 
-    public String getSet() {
-        return set;
+    public String getCardNum() {
+        return cardNum;
     }
 
-    public void setSet(String set) {
-        this.set = set;
+    public void setCardNum(String cardNum) {
+        this.cardNum = cardNum;
+    }
+
+    public String getCardType() {
+        return cardType;
+    }
+
+    public void setCardType(String cardType) {
+        this.cardType = cardType;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
+    }
+
+    public int getToughness() {
+        return toughness;
+    }
+
+    public void setToughness(int toughness) {
+        this.toughness = toughness;
     }
 
     public String getRarity() {
@@ -52,31 +80,11 @@ public class Card {
         this.rarity = rarity;
     }
 
-    public String getColor() {
-        return color;
+    public int getSetId() {
+        return setId;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    @Override
-    public String toString() {
-        return "Card{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", set='" + set + '\'' +
-                ", rarity='" + rarity + '\'' +
-                ", color='" + color + '\'' +
-                ", quantity=" + quantity +
-                '}';
+    public void setSetId(int setId) {
+        this.setId = setId;
     }
 }

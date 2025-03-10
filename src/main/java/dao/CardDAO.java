@@ -8,16 +8,14 @@ import java.util.List;
 
 public class CardDAO {
 
-    private static final String URL = "jdbc:h2:mem:mtg-library";
-    private static final String USER = "";
-    private static final String PASSWORD = "";
 
-    //JDBC Connection
-    private Connection connection;
 
-    public CardDAO() throws SQLException {
-        this.connection = DriverManager.getConnection(URL, USER, PASSWORD);
-    }
+//    //JDBC Connection
+//    private Connection connection;
+//
+//    public CardDAO() throws SQLException {
+//        this.connection = DriverManager.getConnection(URL, USER, PASSWORD);
+//    }
 
     // Create table if it doesn't exist
     public void createTable() throws SQLException {
