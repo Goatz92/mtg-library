@@ -7,8 +7,8 @@ import java.sql.SQLException;
 public class DBUtil {
 
     private static final String URL = "jdbc:mysql://localhost:3306/mtg-library";
-    private static final String USER = "root";
-    private static final String PASSWORD = "Esp-m50Marshall";
+    private static final String USER = "mtglibuser";
+    private static final String PASSWORD = "12345";
 
     static {
         try {
