@@ -1,43 +1,26 @@
 package model;
 
 public class Card {
-    private Integer id;
+    private Integer cardId;
     private String name;
-    private String setName;
-    private String cardType;
-    private String rarity;
-    private String manaCost;
-    private String text;
-    private Integer power;
-    private Integer toughness;
-    private String uuid;
+    private Integer quantity;
 
-    public Card(){
+    public Card() {
 
     }
 
-    public Card(Integer id, String name,
-                String setName, String cardType,
-                String rarity, String manaCost,
-                String text, Integer power, Integer toughness, String uuid) {
-        this.id = id;
+    public Card(Integer cardId, String name, Integer quantity) {
+        this.cardId = cardId;
         this.name = name;
-        this.setName = setName;
-        this.cardType = cardType;
-        this.rarity = rarity;
-        this.manaCost = manaCost;
-        this.text = text;
-        this.power = power;
-        this.toughness = toughness;
-        this.uuid = uuid;
+        this.quantity = quantity;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getCardId() {
+        return cardId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setCardId(Integer cardId) {
+        this.cardId = cardId;
     }
 
     public String getName() {
@@ -48,67 +31,16 @@ public class Card {
         this.name = name;
     }
 
-    public String getSetName() {
-        return setName;
+    public Integer getQuantity() {
+        return quantity;
     }
 
-    public void setSetName(String setName) {
-        this.setName = setName;
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 
-    public String getCardType() {
-        return cardType;
-    }
-
-    public void setCardType(String cardType) {
-        this.cardType = cardType;
-    }
-
-    public String getRarity() {
-        return rarity;
-    }
-
-    public void setRarity(String rarity) {
-        this.rarity = rarity;
-    }
-
-    public String getManaCost() {
-        return manaCost;
-    }
-
-    public void setManaCost(String manaCost) {
-        this.manaCost = manaCost;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public Integer getPower() {
-        return power;
-    }
-
-    public void setPower(Integer power) {
-        this.power = power;
-    }
-
-    public Integer getToughness() {
-        return toughness;
-    }
-
-    public void setToughness(Integer toughness) {
-        this.toughness = toughness;
-    }
-
-    public String getUuid() {
-        return uuid;
-    }
-
-    public void setUuid(String uuid) {
-        this.uuid = uuid;
+    @Override
+    public String toString() {
+        return "Card{" + "cardId=" + cardId + ", name='" + name + '\'' + ", quantity=" + quantity + '}';
     }
 }
