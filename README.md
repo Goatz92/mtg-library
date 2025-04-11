@@ -10,3 +10,4 @@ and the decks that they are in.
 Secondary uses: 
 CRUD operations for each collection of decks
 Add singular cards, not existing in decks.
+Also user should be able to insert decklists in a wishlist and see collected and missing cards.
