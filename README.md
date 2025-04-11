@@ -1,5 +1,5 @@
 # mtg-library
-Java based library for magic the gathering.
+Java based app for mtg collection handling.
 Tracks which cards and decks are in a collection.
 
 Main goal is to save a certain collection of cards
@@ -8,5 +8,5 @@ User should be able to view the cards
 and the decks that they are in.
 
 Secondary uses: 
-CRUD for each collection of decks
+CRUD operations for each collection of decks
 Add singular cards, not existing in decks.
